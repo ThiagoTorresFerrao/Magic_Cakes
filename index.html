@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <title>Magic cakes</title>
+</head>
+
+<body>
+
+    <header class="w-full h-[420px] bg-slate-900 bg-home bg-cove bg-center">
+
+          
+        <div class="flex items-top justify-end  w-full gap-2 fixed top-0 z-40">
+
+
+            <a
+                class="bg-slate-800 text-white font-sans rounded px-4 hover:bg-slate-600"  href='#Bolos'>Bolos</a>
+
+            <a
+                class="bg-slate-800 text-white font-serif rounded px-4 hover:bg-slate-600"  href='#Salgados'>Salgados</a>
+
+            <a
+                class="bg-slate-800 text-white font-serif rounded px-4 hover:bg-slate-600"  href='#Bebidas' > Bebidas </a>
+        </div>
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo.jpeg" alt="logo magic cake"
+                class="w-32 h-34 rounded-full shadow-lg hover:scale-110 duration-200" />
+
+            <h1 class="text-4xl mt-4 mb-2 font-serif text-white ">
+                Magic Cakes
+            </h1>
+
+            <span class=" text-white font-medium"> Delivery<!-- endereço aqui--></span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium"> Seg á Dom 10:00 as 20:00</span>
+            </div>
+
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text3xl font-serif text-center mt-9 mb-6" id="Bolos">
+        Cardápio
+    </h2>
+
+    <div id="menu" class="bg-slate-200">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.37.34.jpeg "
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Pistache com Morango e Leite Condensado Pedaço</p>
+
+                    <p class="text-sm ">Pistache com morango e leite condensado: Bolo de massa branca, recheios de trufa
+                        de
+                        pistache e leite
+                        condensado com morango, cobertura de trufa de pistache, pistache granulado, morango e Moça®
+                        base.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Pistache com Morango e Leite Condensado Pedaço" data-price="4,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---////////////////////////////2////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.39.03.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Pistache com Morango e Leite Condensado</p>
+
+                    <p class="text-sm ">Pistache com morango e leite condensado: Bolo de massa branca, recheios de trufa
+                        de
+                        pistache e leite
+                        condensado com morango, cobertura de trufa de pistache, pistache granulado, morango e Moça®
+                        base.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 30,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                            data-name="Pistache com Morango e Leite Condensado" data-price="30,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--//////////////////////////////////////////3////////////////////////////////////////////////////////////////-->
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.41.47.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Pistache com Ganache de Limão pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa branca, recheios de trufa de pistache e ganache de limão,
+                        cobertura de trufa de pistache, pistache granulado, ganache de limão, decorado com farofa de pão
+                        de ló e raspas de limão.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Pistache com Ganache de Limão Pedaço" data-price="4,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////4/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.40.37.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Pistache com Ganache de Limão</p>
+
+                    <p class="text-sm ">Bolo de massa branca, recheios de trufa de pistache e ganache de limão,
+                        cobertura de trufa de pistache, pistache granulado, ganache de limão, decorado com farofa de pão
+                        de ló e raspas de limão.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 30,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Pistache com Ganache de Limão" data-price="30,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////5/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.45.10.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Bombom Branco Trufado Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa branca, recheios de mousse branca com bombons e trufado de
+                        chocolate ao leite, cobertura de mousse branca, trufado de chocolate ao leite, bombons e
+                        cerejas.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Bombom Branco Trufado Pedaço" data-price="4,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--///////////////////////////////////////////6///////////////////////////////////////////////////////////////-->
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.43.34.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Bombom Branco Trufado </p>
+
+                    <p class="text-sm ">Bolo de massa branca, recheios de mousse branca com bombons e trufado de
+                        chocolate ao leite, cobertura de mousse branca, trufado de chocolate ao leite, bombons e
+                        cerejas.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 30,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700" data-name="Bombom Branco Trufado"
+                            data-price="30,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---/////////////////////////7///////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.48.20.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Delícia de Chocolate Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de trufado de chocolate ao leite Dois
+                        Frades®, cobertura de trufado meio amargo, raspas de chocolate ao leite Dois Frades® e cerejas
+                        (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700" data-name="Delícia de Chocolate Pedaço"
+                            data-price="4,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////8/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.47.11.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Delícia de Chocolate</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de trufado de chocolate ao leite Dois
+                        Frades®, cobertura de trufado meio amargo, raspas de chocolate ao leite Dois Frades® e cerejas
+                        (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 30,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700" data-name="Delícia de Chocolate"
+                            data-price="30,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--//////////////////////////////////////////////9////////////////////////////////////////////////////////////-->
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.50.37.jpeg "
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Chocotrufas com Morangos Pedaço</p>
+
+                    <p class="text-sm ">Bolo de chocolate, recheios de ganache de chocolate meio amargo e mousse de
+                        chocolate com morangos, cobertura de mousse de chocolate, trufas de chocolate e morangos.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,50</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Pistache com Morango e Leite Condensado Pedaço" data-price="4.50">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////10/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.49.31.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Chocotrufas com Morangos</p>
+
+                    <p class="text-sm ">Bolo de chocolate, recheios de ganache de chocolate meio amargo e mousse de
+                        chocolate com morangos, cobertura de mousse de chocolate, trufas de chocolate e morangos.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 35,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Chocotrufas com Morangos"
+                            data-price="35,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////11/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.52.21.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Trufado Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheios de mousse de chocolate e trufado de
+                        chocolate ao leite, cobertura de mousse de chocolate, raspas de chocolate ao leite, calda de
+                        chocolate e cerejas decorativas.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,50</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700" data-name="Trufado Pedaço"
+                            data-price="4.50">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--//////////////////////////////////////////////12////////////////////////////////////////////////////////////-->
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.51.40.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Trufado</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheios de mousse de chocolate e trufado de
+                        chocolate ao leite, cobertura de mousse de chocolate, raspas de chocolate ao leite, calda de
+                        chocolate e cerejas decorativas.
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 35,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Trufado" data-price="35,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////13/////////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.54.06.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Delícia de Coco Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de cocada, cobertura de trufado de chocolate
+                        ao leite, chocolate granulado, coco ralado e cerejas (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 4,50</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Delícia de Coco Pedaço"
+                            data-price="4.50">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---///////////////////////////14/////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.53.23.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Delícia de Coco</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de cocada, cobertura de trufado de chocolate
+                        ao leite, chocolate granulado, coco ralado e cerejas (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 35,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Delícia de Coco"
+                            data-price="35,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---////////////////////////15///////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.56.01.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">NUTELLA® Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de creme de NUTELLA® e mousse branca com
+                        bombons, cobertura de mousse de chocolate e mousse branca, bombons, castanhas e cerejas.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 5,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="NUTELLA® Pedaço"
+                            data-price="5,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---//////////////////////////16//////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.55.16.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">NUTELLA®</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheio de creme de NUTELLA® e mousse branca com
+                        bombons, cobertura de mousse de chocolate e mousse branca, bombons, castanhas e cerejas.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 40,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                            data-name="Pistache com Morango e Leite Condensado" data-price="40,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---////////////////////////17////////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.58.03.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Brigadeiro com NUTELLA® Pedaço</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheios de brigadeiro e NUTELLA®, cobertura de
+                        trufado de chocolate ao leite, raspas de chocolate ao leite, castanha de caju e cerejas
+                        (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 5,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                            data-name="Brigadeiro com NUTELLA® Pedaço" data-price="5,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!---/////////////////////////18///////////////////////////// -->
+
+
+            <div class="flex gap-2">
+
+                <img src="./assets/WhatsApp Image 2024-11-23 at 09.57.11.jpeg"
+                    alt="bolo de Pistache com Morango e Leite Condensado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Brigadeiro com NUTELLA®</p>
+
+                    <p class="text-sm ">Bolo de massa de chocolate, recheios de brigadeiro e NUTELLA®, cobertura de
+                        trufado de chocolate ao leite, raspas de chocolate ao leite, castanha de caju e cerejas
+                        (decorativas).
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 40,00</p>
+
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Brigadeiro com NUTELLA®"
+                            data-price="40,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <!---///////////////////////             SALGADOS                             /////////////////////////////// -->
+
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="text-2xl md:text3xl font-serif text-center mt-9 mb-6" id="Salgados">
+                Salgados
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados1.jpeg" alt="Mini Coxinha Frango com Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Coxinha Frango com Requeijão</p>
+
+                        <p class="text-sm ">Massa macia e levemente temperada, recheio de frango desfiado com temperos
+                            especiais e requeijão cremoso.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn  hover:bg-slate-700"
+                                data-name="Mini Coxinha Frango com Requeijão" data-price="0.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados2.jpeg" alt="Mini Coxinha Brócolis com Bacon"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Coxinha Brócolis com Bacon</p>
+
+                        <p class="text-sm ">Massa macia e levemente temperada, com recheio de brócolis e pequenos
+                            pedaços de bacon.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Mini Coxinha Brócolis com Bacon" data-price="0.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados3.jpeg" alt="Mini Bolinha de Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Bolinha de Requeijão</p>
+
+                        <p class="text-sm ">Massa macia e levemente temperada, com recheio de requeijão cremoso.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Mini Bolinha de Requeijão" data-price="0.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados4.jpeg" alt="Coxinha de Frango"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Coxinha de Frango </p>
+
+                        <p class="text-sm ">Massa macia e levemente temperada, com recheio de frango desfiado e temperos
+                            especiais.
+
+                            INGREDIENTES: frango, farinha de trigo enriquecida, leite integral, farinha de rosca, flocos
+                            de batata, margarina, amido modificado, óleo de soja, óleo de algodão, sal e especiarias.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 1,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Coxinha de Frango"
+                                data-price="1.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados5.jpeg" alt="Coxinha de Frango com Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Coxinha de Frango com Requeijão</p>
+
+                        <p class="text-sm ">Massa macia e levemente temperada, com recheio de frango desfiado, temperos
+                            especiais e requeijão cremoso.
+
+                            INGREDIENTES: farinha de trigo enriquecida, frango, requeijão, leite integral, farinha de
+                            rosca, flocos de batata, margarina, amido modificado, óleo de soja, óleo de algodão, sal e
+                            especiarias.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 1,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Coxinha de Frango com Requeijão" data-price="1.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados6.jpeg" alt="Kibe Tradicional"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Kibe Tradicional</p>
+
+                        <p class="text-sm ">massa deliciosamente temperada com carne de alta qualidade.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 1,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Kibe Tradicional"
+                                data-price="1.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados7.jpeg" alt="Mini Coxinha Frango"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Coxinha Frango</p>
+
+                        <p class="text-sm ">Bolo de massa de chocolate, recheios de brigadeiro e NUTELLA®, cobertura de
+                            trufado de chocolate ao leite, raspas de chocolate ao leite, castanha de caju e cerejas
+                            (decorativas).
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Mini Coxinha Frango"
+                                data-price="0.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados8.jpeg" alt="Kibe de Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Kibe de Requeijão</p>
+
+                        <p class="text-sm ">Massa deliciosamente temperada com carne de alta qualidade e recheio de
+                            requeijão cremoso.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 1,50</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Kibe de Requeijão"
+                                data-price="1.50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados9.jpeg" alt="Mini Kibe de Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Kibe de Requeijão</p>
+
+                        <p class="text-sm ">Massa deliciosamente temperada com carne de alta qualidade e recheio de
+                            requeijão cremoso.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,75</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Mini Kibe de Requeijão"
+                                data-price="0.75">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/salgados10.jpeg" alt="Torta de Frango"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Torta de Frango</p>
+
+                        <p class="text-sm ">Prepare-se para se deliciar com a nossa torta de frango assada! A combinação
+                            entre massa dourada, recheio de frango desfiado e temperos especiais irresistíveis vai te
+                            conquistar.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 3,00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Torta de Frango"
+                                data-price="3,00">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados11.jpeg" alt="Torta de Calabresa com Requeijão"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Torta de Calabresa com Requeijão</p>
+
+                        <p class="text-sm ">Recompense seu paladar com nossa deliciosa torta de calabresa com requeijão!
+                            Com massa crocante e dourada, à base de farinha de trigo, recheada com pedaços suculentos de
+                            calabresa e um cremoso requeijão que derrete na boca.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 3,00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Torta de Calabresa com Requeijão" data-price="3,00">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados12.jpeg" alt="Pastel Integral de Frango"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Pastel Integral de Frango</p>
+
+                        <p class="text-sm ">Mais sabor e mais alegria! Massa assada, com base de farinha de trigo
+                            integral, recheio de frango desfiado com temperos especiais.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 3,00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Pastel Integral de Frango" data-price="3,00">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados13.jpeg" alt="Pastel de Presunto e Queijo"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Pastel de Presunto e Queijo</p>
+
+                        <p class="text-sm ">Renda-se à perfeita harmonia entre o presunto suculento e o queijo
+                            derretido, envoltos em uma massa dourada e crocante, feita à base de farinha de trigo. Uma
+                            escolha clássica que nunca decepciona os paladares mais exigentes.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 3,00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                data-name="Pastel de Presunto e Queijo" data-price="3,00">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados14.jpeg" alt="Pastel de Carne"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Pastel de Carne</p>
+
+                        <p class="text-sm ">O clássico queridinho! Massa assada, com base de farinha de trigo, recheio
+                            de carne moída e temperos especiais.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 3,00</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Pastel de Carne"
+                                data-price="3,00">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <img src="./assets/sagados15.jpeg" alt="Mini Pastel de Carne"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                    <div class=" w-full">
+                        <p class="font-bold">Mini Pastel de Carne</p>
+
+                        <p class="text-sm ">O clássico queridinho! Massa assada, com base de farinha de trigo, recheio de carne moída e temperos especiais.
+                        </p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">€ 0,75</p>
+
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Mini Pastel de Carne"
+                                data-price="0.75">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---/////////////////////////          BEBIDAS                           ///////////////////////////// -->
+
+
+
+
+            <div class="mx-auto max-w-7xl px-2 my-2 Bolos">
+                <h2 class="text-2xl md:text3xl font-serif text-center mt-9 mb-6" id="Bebidas">
+                    Bebidas
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16  w-full"
+                    id="Bebida">
+
+
+
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/cafe.jpeg" alt="Cafe"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Café</p>
+
+                            <p class="text-sm ">Café moido na hora.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 0,75</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Café"
+                                    data-price="0.75">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/capuccino.jpeg" alt="capuccino"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Capuccino</p>
+
+                            <p class="text-sm ">capuccino Quente
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 2,50</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Capuccino"
+                                    data-price="2,50">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/chocolate quente.jpeg" alt="chocolate quente."
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Chocolate Quente.</p>
+
+                            <p class="text-sm ">Chocolate quente com NUTELLA®
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 3,50</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="chocolate quente"
+                                    data-price="3,50">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/guarana.jpeg" alt="guarana"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">guaraná antarctica</p>
+
+                            <p class="text-sm ">guaraná de 2 litros
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 2,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="guaraná antarctica"
+                                    data-price="2,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex gap-2  w-full">
+
+                        <img src="./assets/coca lata.jpeg" alt="bcoca cola lata"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Coca cola lata</p>
+
+                            <p class="text-sm ">Coca cola lata 350ml
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 1,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Coca cola lata"
+                                    data-price="1,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/coca garafa.jpeg" alt="coca cola garrafa"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Coca cola garrafa</p>
+
+                            <p class="text-sm ">Coca cola garrafa 2 litros
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 3,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Coca cola garrafa"
+                                    data-price="3,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/coca lata zero.jpeg" alt="Coca cola zero lata"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Coca cola zero lata</p>
+
+                            <p class="text-sm ">Coca cola zero lada 350ml
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 1,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Coca cola zero lata"
+                                    data-price="1,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/coca zero.jpeg" alt="coca cola zero garrafa"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Coca cola zero garrafa</p>
+
+                            <p class="text-sm ">Coca cola zero garrafa 2 litros
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 3,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700"
+                                    data-name="Coca cola zero garrafa" data-price="3,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/fanta lata.jpeg" alt="fanta lata"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Fanta laranja lata</p>
+
+                            <p class="text-sm ">Fanta laranja lata 350 ml
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 1,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Fanta laranja lata"
+                                    data-price="1,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex gap-2">
+
+                        <img src="./assets/fanta garafa.jpeg" alt="fanta garrafa"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                        <div class=" w-full">
+                            <p class="font-bold">Fanta garrafa</p>
+
+                            <p class="text-sm ">Fanta garrafa 2 litros
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">€ 3,00</p>
+
+                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-slate-700" data-name="Fanta garrafa"
+                                    data-price="3,00">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-serif text 3xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-serif mt-4">Endereço de entrega</p>
+            <input 
+            type="text" 
+            placeholder="Digite seu endereço completo..." 
+            id="address"
+            class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-700 font-bold hidden" id="address-warn">Digita seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn"
+                    class="bg-red-500 text-white px-4 py-1 hover:bg-red-600 duration-150 rounded">Fechar</button>
+                <button id="checkout-btn"
+                    class="bg-green-500 text-white px-4 py-1 hover:bg-green-600 duration-150  rounded">Finalizar
+                    pedido</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <footer
+        class="w-full bg-slate-800 py-3 fixed bottom-0 z-40 flex items-center justify-center hover:bg-slate-700 duration-150">
+        <button class="flex items-center gap-2 text-white font-serif" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
